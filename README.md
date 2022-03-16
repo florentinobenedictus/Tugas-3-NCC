@@ -33,6 +33,9 @@
 4. (Bonus) Source soal: [Puzzle #2: Ann Skips Bail](https://blog.system32.kr/13) dari google dengan keyword `ann dercover ctf wireshark`
 
 ## Soal 3
-Display filter: `tcp.port == 21`
-### Referensi
-https://www.alphr.com/wireshark-filter-port/
+**Display filter:** `tcp.port == 21`**
+1. Buka Wireshark
+2. Capture Paket melalui network connection yang sedang dipakai (LAN/Wireless), lalu buka website seperti [http://dephub.go.id/](http://dephub.go.id/)
+3. Terdapat error pada PC saya akibat kurang memori sehingga ketika paket dicapture Wireshark akan not responding, tetapi hasil akan tetap tersimpan pada C:\Users\USER\AppData\Local\Temp
+4. Gunakan `tcp.port == 21` pada display filter
+5. Secara default port 21 akan terblokir, sehingga tidak ada hasil yang ditampilkan ketika display filter
