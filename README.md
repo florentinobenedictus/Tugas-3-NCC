@@ -10,6 +10,24 @@
 
 ### 1B.
 1. Buka `soal1.pcap`
-2. 2. Gunakan display filter `ip.dst == 192.168.1.158` pada Wireshark
+2. Gunakan display filter `ip.dst == 192.168.1.158` pada Wireshark
 3. Export object as HTTP
 4. Akan terdapat 2 file yang sama dengan 1A
+
+## Soal 2
+1. Buka `soal2.pcap`
+2. Tanpa display filter, export object as IMF, akan terdapat 2 file yaitu `lunch next week.eml` dan `rendezvous.eml` (Jawaban No. 2)
+3. Buka kedua file pada online eml viewer seperti [https://www.encryptomatic.com/viewer/](https://www.encryptomatic.com/viewer/) atau kirimkan kedua file EML melalui gmail.
+5. Setelah isi kedua file dilihat, ditemukan user-user email (Jawaban No. 1)
+6. Jika menggunakan online viewer (atau gmail), akan ditemukan attachment .docx `secretrendezvous.docx` (Jawaban No. 3)
+7. Untuk mendapatkan isi `secretrendezvous.docx` kita perlu menggunakan gmail karena isi `secretrendezvous.docx` akan muncul dan dapat dilihat/download secara otomatis
+9. Dari file tersebut, didapatkan lokasi meeting adalah **Air mancur dekat Playa del Carmen, Meksiko** (Jawaban No. 4)
+
+### Informasi yang didapat:
+1. Email
+* Email Ann: sneakyg33k@aol.com
+* Email pacar Ann: mistersecretx@aol.com
+* Email orang yang ditolak makan siang Ann: sec558@gmail.com
+2. Tanggal Email: Keduanya 10 Oktober 2009
+3. Tempat Pertemuan: Air mancur dekat Playa del Carmen, Meksiko
+4. (Bonus) Source soal: [Puzzle #2: Ann Skips Bail](https://blog.system32.kr/13) dari google dengan keyword `ann dercover ctf wireshark`
