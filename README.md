@@ -31,3 +31,8 @@
 2. Tanggal Email: Keduanya 10 Oktober 2009
 3. Tempat Pertemuan: Air mancur dekat Playa del Carmen, Meksiko
 4. (Bonus) Source soal: [Puzzle #2: Ann Skips Bail](https://blog.system32.kr/13) dari google dengan keyword `ann dercover ctf wireshark`
+
+## Soal 3
+Display filter: `tcp.port == 21`
+### Referensi
+https://www.alphr.com/wireshark-filter-port/
