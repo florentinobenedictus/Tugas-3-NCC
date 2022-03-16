@@ -35,7 +35,10 @@
 ## Soal 3
 **Display filter:** `tcp.port == 21`**
 1. Buka Wireshark
-2. Capture Paket melalui network connection yang sedang dipakai (LAN/Wireless), lalu buka website seperti [http://dephub.go.id/](http://dephub.go.id/)
-3. Terdapat error pada PC saya akibat kurang memori sehingga ketika paket dicapture Wireshark akan not responding, tetapi hasil akan tetap tersimpan pada C:\Users\USER\AppData\Local\Temp
+2. Capture paket melalui network connection yang sedang dipakai (LAN/Wireless), lalu buka website seperti [http://dephub.go.id/](http://dephub.go.id/)
+3. Terdapat error pada PC saya akibat kurang memori sehingga ketika paket dicapture Wireshark akan not responding, tetapi hasil akan tetap tersimpan pada `C:\Users\USER\AppData\Local\Temp`
 4. Gunakan `tcp.port == 21` pada display filter
 5. Secara default port 21 akan terblokir, sehingga tidak ada hasil yang ditampilkan ketika display filter
+6. Agar bisa mendapat hasil dari port 21, dapat digunakan FileZilla. FileZilla server distart dari XAMPP lalu tambahkan **User** dan **Shared Folder** lewat **Admin**, kemudian gunakan FileZilla sebagai client. Isi **Host** sesuai server (127.0.0.1), **Username** dan **Password** sesuai user pada server, dan **Port** 21 yaitu port default untuk FTP. Selanjutnya mulai capture lagi menggunakan Wireshark lalu tes dengan transfer data dari **Remote site** ke **Local site**
+7. Stop capture paket pada Wireshark lalu cari file .pcapng yang terbuat (format wireshark_Wireless Network Connection....) kemudian gunakan `tcp.port == 21` kembali pada display filter
+8. Akan ada paket yang tertangkap
